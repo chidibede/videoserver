@@ -1,0 +1,21 @@
+{
+  "name": "videoserver",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "dependencies": {
+    "next": "9.5.3",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "service:videoserver": "yarn workspace @videoserver/videoserver",
+    "web": "yarn workspace @videoserver/www"
+  }
+}
