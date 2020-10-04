@@ -1,7 +1,7 @@
 from data_layer.models.base import Base
 import sqlalchemy as sql
 
-class Video:
+class Video(Base):
     __tablename__ = 'video'
     id = sql.Column(sql.Integer, primary_key=True)
     name = sql.Column(sql.String)

@@ -1,1 +1,1 @@
-from videos import *
+from .videos import *
